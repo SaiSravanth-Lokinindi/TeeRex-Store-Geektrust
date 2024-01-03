@@ -1,0 +1,83 @@
+.filter {
+  position: sticky;
+  top: 20vh;
+  left: 0;
+  margin: 0 auto;
+
+  height: 550px;
+  width: 16rem;
+  overflow: auto;
+  border-radius: 15px;
+  padding: 0.75rem 0;
+  background-color: #fcfcfc;
+  color: maroon;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.clear__btn {
+  align-self: flex-end;
+  margin-right: 1rem;
+  cursor: pointer;
+  width: 30%;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0rem;
+}
+
+.clear__btn:hover {
+  background-color: rgb(187, 71, 71);
+  color: white;
+}
+
+.filter__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  margin-left: 1rem;
+  gap: 0.5rem;
+}
+
+.color__filters {
+  display: grid;
+  grid-template: auto / auto auto;
+}
+
+.filter__cat {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+@media only screen and (max-width: 970px) {
+  .filter {
+    position: fixed;
+    top: 25vh;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    z-index: 30;
+    animation: slide-right 250ms forwards ease-out;
+  }
+
+  @keyframes slide-right {
+    from {
+      margin-left: -100%;
+      display: none;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .filter {
+    max-height: 60vh;
+    overflow: auto;
+  }
+}
