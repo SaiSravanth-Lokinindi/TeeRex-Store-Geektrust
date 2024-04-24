@@ -45,10 +45,10 @@ const Products = (props) => {
               <Filter />
             </div>
             {fetchedProducts.length === 0 ? (
-              <p className={classes.info}>
+              <h3 className={classes.info}>
                 No matching products! Try removing filters or smaller search
                 word.
-              </p>
+              </h3>
             ) : (
               <div className={classes.products}>
                 {fetchedProducts.map((product) => {

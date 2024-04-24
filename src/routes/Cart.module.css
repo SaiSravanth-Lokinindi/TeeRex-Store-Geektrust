@@ -10,6 +10,7 @@
   max-width: 750px;
   min-height: 100px;
   max-height: 700px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +51,7 @@
 
 .checkout__btn {
   cursor: pointer;
+  user-select: none;
   padding: 0.6rem 1rem;
   background-color: brown;
   color: white;
@@ -62,7 +64,8 @@
   background-color: rgb(153, 35, 35);
 }
 .checkout__btn:active {
-  transform: scale(0.97);
+  transform: scale(0.96);
+  transition: transform 0s;
 }
 
 @media only screen and (max-width: 728px) {

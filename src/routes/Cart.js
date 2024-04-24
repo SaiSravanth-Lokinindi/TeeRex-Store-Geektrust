@@ -28,9 +28,9 @@ const Cart = () => {
             </div>
           </>
         ) : (
-          <p className={classes.cart__info}>
+          <h3 className={classes.cart__info}>
             No items in cart! Try adding some.
-          </p>
+          </h3>
         )}
       </div>
     </main>

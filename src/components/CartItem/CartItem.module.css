@@ -4,6 +4,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem 0;
+  font-size: var(--ff-primary);
 }
 
 .item__details {
@@ -26,6 +27,7 @@
 .cart__actions span {
   width: 40%;
   text-align: center;
+  margin: auto 0;
   border: 2px solid #ececec;
   background: white;
 }
@@ -50,6 +52,7 @@
   border: 2px solid maroon;
   border-radius: 7px;
   cursor: pointer;
+  transition: background-color 150ms ease-in-out;
 }
 
 .del__btn:hover,

@@ -21,7 +21,9 @@
 }
 
 .info {
-  margin: 0 auto;
+  margin: 10rem auto 0 auto;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 @media only screen and (max-width: 1470px) {
@@ -64,6 +66,12 @@
   .products {
     display: flex;
     flex-direction: column;
+    margin: auto;
+  }
+
+  .info {
+    font-size: 1rem;
+    text-align: center;
     margin: auto;
   }
 }
