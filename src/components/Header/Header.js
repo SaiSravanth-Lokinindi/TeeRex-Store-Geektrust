@@ -30,7 +30,7 @@ const Header = () => {
               style={{
                 outline: "white",
                 fill: "solid",
-                fontSize: "30px",
+                fontSize: "1.75rem",
               }}
             />
             <div

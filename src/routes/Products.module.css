@@ -1,6 +1,7 @@
 .main {
   display: flex;
   margin: 5rem auto 1rem auto;
+  padding: 0 1rem;
 }
 
 .loading {

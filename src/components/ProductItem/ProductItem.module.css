@@ -1,4 +1,5 @@
 .product__container {
+  background-color: white;
   height: 250px;
   width: 280px;
   padding: 0.5rem;
@@ -12,7 +13,8 @@
   transition: transform 300ms, box-shadow 250ms;
 }
 
-.product__container:hover {
+.product__container:hover,
+.product__container:focus-within {
   transform: scale(1.02);
   box-shadow: 2px 4px 25px 8px rgba(0, 0, 0, 0.07);
   > img {
@@ -47,14 +49,16 @@
   background-color: brown;
   color: white;
   padding: 0.5rem 0.6rem;
-  border: none;
-  border-radius: 15px;
+  border: 1px solid brown;
+  border-radius: 1rem;
   outline: none;
   cursor: pointer;
+  font-family: var(--ff-primary);
   transition: background-color 200ms;
 }
 
 .add__cart__btn:hover,
 .add__cart__btn:focus {
   background-color: rgb(150, 0, 0);
+  border: 1px solid black;
 }

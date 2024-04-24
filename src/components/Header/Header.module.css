@@ -50,7 +50,8 @@
   background-color: maroon;
   color: white;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding: 2px;
 }
 
 .animate {
